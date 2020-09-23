@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    main: ["./src/main.js", "./src/map.js"]
+    main: "./src/main.js"
   },
   mode: "development",
   output: {
@@ -54,13 +54,6 @@ module.exports = {
             }
           }
         ]
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        loader: "file-loader",
-        options: {
-          name: "images/[name].[ext]"
-        }
       }
     ]
   }
